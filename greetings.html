@@ -23,7 +23,32 @@
         <Greeting />, document.getElementByID('app')
       );
     </script>
-
+    <script type="text/babel">
+      class ShoppingList extends React.Component {
+        render() {
+          return(
+            <div clasName="shoppingList">
+            <h1>Shopping List for {this.props.name}</h1>
+            <ul>
+              <li>Instagram</li>
+              <l1>Facebook</li>
+              <li>WhatsApp</li>
+            </ul>
+          </div>
+        );
+        }
+      }
+    </script>
+    <script type="text/babel">
+      class WhatsUp extends React.Component {
+        render() {
+          return (
+            <div className="whats-up">
+              <p>Whats going on?</p>
+            </div>
+          );
+        }
+      }
   </body>
 
   </html>
