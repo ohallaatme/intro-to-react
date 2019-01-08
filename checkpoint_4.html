@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>submission 4 react</title>
+  </head>
+  <body>
+    <div id='submission'></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.1.0/umd/react.development.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.1.0/umd/react-dom.development.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+      <script type="text/babel">
+        class Greeting extends React.Component {
+            constructor(props){
+              super(props);
+              this.state = {
+                day: 1
+              }
+            }
+          render(){
+            return (
+            <div>
+              <h1>Hello {this.props.name}</h1>
+              <h2> day is: {this.state.day}</h2>
+            </div>
+            );
+          }
+        }
+      ReactDOM.render(
+        <Greeting name="Katie"/>, document.getElementById('submission')
+      );
+    </script>
+    <div id='submission1'></div>
+      <script type="text/babel">
+      class WhatsUp extends React.Component {
+        render() {
+          return (
+            <div>
+              <h3>{this.props.saying}!</h3>
+            </div>
+          );
+        }
+      }
+      ReactDOM.render(
+        <WhatsUp saying="What's going on?" />, document.getElementById('submission1')
+      );
+      </script>
+  </body>
+</html>
